@@ -1,3 +1,4 @@
+//This code is really sad
 /* eslint-disable @typescript-eslint/no-require-imports */
 /* eslint-disable no-undef */
 /* eslint-disable roblox-ts/lua-truthiness */

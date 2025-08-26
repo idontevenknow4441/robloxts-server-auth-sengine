@@ -1,0 +1,43 @@
+message uint16 {
+	optional bool _NOCOMPILE = 1;
+}
+message int16 {
+	optional bool _NOCOMPILE = 1;
+}
+message uint8 {
+	optional bool _NOCOMPILE = 1;
+}
+message int8 {
+	optional bool _NOCOMPILE = 1;
+}
+message float16 {
+	optional bool _NOCOMPILE = 1;
+}
+message float32 {
+	optional bool _NOCOMPILE = 1;
+}
+message float64 {
+	optional bool _NOCOMPILE = 1;
+}
+message CInitializeMeMessage {
+	required uint8 hello = 1;
+}
+message CPlayerPositionUpdate {
+	required Vec3f32 pos = 1;
+	required int16 yaw = 2;
+	required int16 pitch = 3;
+	required uint16 playerId = 4;
+	required bool wasTeleport = 5;
+}
+message CPlayerPositionsUpdate {
+	required uint32 tick = 1;
+	required float64 time = 2;
+	repeated CPlayerPositionUpdate positions = 2;
+}
+message CEntityCreateMessage {
+	required uint16 entId = 1;
+	required uint16 entDefIndex = 2;
+	required Vec3f32 position = 3;
+	optional string model = 4;
+	optional string data = 5;
+}

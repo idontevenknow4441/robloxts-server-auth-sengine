@@ -1,0 +1,26 @@
+message uint16 {
+	optional bool _NOCOMPILE = 1;
+}
+message int16 {
+	optional bool _NOCOMPILE = 1;
+}
+message uint8 {
+	optional bool _NOCOMPILE = 1;
+}
+message int8 {
+	optional bool _NOCOMPILE = 1;
+}
+message float16 {
+	optional bool _NOCOMPILE = 1;
+}
+message float32 {
+	optional bool _NOCOMPILE = 1;
+}
+message float64 {
+	optional bool _NOCOMPILE = 1;
+}
+message Vec3f32 {
+	required float32 x = 1;
+	required float32 y = 2;
+	required float32 z = 3;
+}
